@@ -3,16 +3,23 @@
     android:height="96dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
-  <!-- Crust -->
+  <!-- Lucide 'pizza' icon with vibrant colors -->
   <path
-      android:fillColor="#E65100"
-      android:pathData="M12,2C6.48,2 2,6.48 2,12C2,12.55 2.45,13 3,13C3.55,13 4,12.55 4,12C4,7.58 7.58,4 12,4C16.42,4 20,7.58 20,12C20,12.55 20.45,13 21,13C21.55,13 22,12.55 22,12C22,6.48 17.52,2 12,2Z"/>
-  <!-- Pizza Body Slice -->
+      android:pathData="M2,16L22,22L16,2A20,20 0,0 0,2,16Z"
+      android:strokeWidth="2"
+      android:strokeColor="#FF4757"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
   <path
-      android:fillColor="#FFCA28"
-      android:pathData="M12,3.5L3,20C2.6,20.8 3.2,21.5 4,21.5C9,21.5 15,21.5 20,21.5C20.8,21.5 21.4,20.8 21,20L12,3.5Z"/>
-  <!-- Sauce / Toppings -->
+      android:pathData="M5.71,17.11a17.04,17.04 0,0 1,11.4,-11.4"
+      android:strokeWidth="2"
+      android:strokeColor="#FF9F1A"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
   <path
-      android:fillColor="#E53935"
-      android:pathData="M12,7A1.5,1.5 0,1 1,10.5,8.5A1.5,1.5 0,0 1,12,7ZM8,14A1.5,1.5 0,1 1,6.5,15.5A1.5,1.5 0,0 1,8,14ZM16,14A1.5,1.5 0,1 1,14.5,15.5A1.5,1.5 0,0 1,16,14ZM12,16A1.5,1.5 0,1 1,10.5,17.5A1.5,1.5 0,0 1,12,16Z"/>
+      android:pathData="M15,11h0.01M11,15h0.01M16,16h0.01"
+      android:strokeWidth="3"
+      android:strokeColor="#FF4757"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
 </vector>

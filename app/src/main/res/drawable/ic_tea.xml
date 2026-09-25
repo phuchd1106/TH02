@@ -3,24 +3,29 @@
     android:height="96dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
-  <!-- Cup body -->
+  <!-- Lucide 'cup-soda' icon with vibrant colors -->
   <path
-      android:fillColor="#FFCC80"
-      android:pathData="M6,6L7.5,20C7.6,21.1 8.5,22 9.6,22L14.4,22C15.5,22 16.4,21.1 16.5,20L18,6L6,6Z"/>
-  <!-- Milk Tea liquid -->
+      android:pathData="M6,8l1.75,12.28a2,2 0,0 0,2 1.72h4.5a2,2 0,0 0,2,-1.72L18,8"
+      android:strokeWidth="2"
+      android:strokeColor="#FF4757"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
   <path
-      android:fillColor="#D7CCC8"
-      android:pathData="M6.5,10L7.5,20C7.6,21.1 8.5,22 9.6,22L14.4,22C15.5,22 16.4,21.1 16.5,20L17.5,10L6.5,10Z"/>
-  <!-- Boba pearls -->
+      android:pathData="M5,8h14"
+      android:strokeWidth="2"
+      android:strokeColor="#FF4757"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
   <path
-      android:fillColor="#3E2723"
-      android:pathData="M9,18A1,1 0,1 1,8,19A1,1 0,0 1,9,18ZM12,18A1,1 0,1 1,11,19A1,1 0,0 1,12,18ZM15,18A1,1 0,1 1,14,19A1,1 0,0 1,15,18ZM10.5,15.5A1,1 0,1 1,9.5,16.5A1,1 0,0 1,10.5,15.5ZM13.5,15.5A1,1 0,1 1,12.5,16.5A1,1 0,0 1,13.5,15.5Z"/>
-  <!-- Lid -->
+      android:pathData="M7,15h10"
+      android:strokeWidth="2"
+      android:strokeColor="#FF9F1A"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
   <path
-      android:fillColor="#424242"
-      android:pathData="M5,5C5,4.4 5.4,4 6,4L18,4C18.6,4 19,4.4 19,5C19,5.6 18.6,6 18,6L6,6C5.4,6 5,5.6 5,5Z"/>
-  <!-- Straw -->
-  <path
-      android:fillColor="#E53935"
-      android:pathData="M13,1L11,1L12,12L14,12Z"/>
+      android:pathData="M15,2l-3,6M12,2v6"
+      android:strokeWidth="2"
+      android:strokeColor="#FF4757"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round" />
 </vector>

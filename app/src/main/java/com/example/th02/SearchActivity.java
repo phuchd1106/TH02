@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -31,7 +32,8 @@ public class SearchActivity extends AppCompatActivity {
     private EditText edtSearchQuery;
     private MaterialButton btnSearch;
     private RecyclerView rvSearchResults;
-    private TextView tvNoResults;
+    private LinearLayout layoutEmptyState;
+    private TextView tvEmptyMessage;
     private FoodAdapter foodAdapter;
 
     @Override
@@ -50,6 +52,9 @@ public class SearchActivity extends AppCompatActivity {
         setupRecyclerView();
         setupListeners();
 
+        // Focus search input
+        edtSearchQuery.requestFocus();
+
         performSearch("");
     }
 
@@ -58,7 +63,8 @@ public class SearchActivity extends AppCompatActivity {
         edtSearchQuery = findViewById(R.id.edtSearchQuery);
         btnSearch = findViewById(R.id.btnSearch);
         rvSearchResults = findViewById(R.id.rvSearchResults);
-        tvNoResults = findViewById(R.id.tvNoResults);
+        layoutEmptyState = findViewById(R.id.layoutEmptyState);
+        tvEmptyMessage = findViewById(R.id.tvEmptyMessage);
     }
 
     private void setupRecyclerView() {
@@ -100,15 +106,24 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     private void performSearch(String query) {
+        if (query == null || query.trim().isEmpty()) {
+            foodAdapter.updateList(null);
+            rvSearchResults.setVisibility(View.GONE);
+            tvEmptyMessage.setText(R.string.search_prompt);
+            layoutEmptyState.setVisibility(View.VISIBLE);
+            return;
+        }
+
         List<Food> searchResults = FoodRepository.searchFood(query);
         foodAdapter.updateList(searchResults);
 
         if (searchResults.isEmpty()) {
             rvSearchResults.setVisibility(View.GONE);
-            tvNoResults.setVisibility(View.VISIBLE);
+            tvEmptyMessage.setText(R.string.no_result_found);
+            layoutEmptyState.setVisibility(View.VISIBLE);
         } else {
             rvSearchResults.setVisibility(View.VISIBLE);
-            tvNoResults.setVisibility(View.GONE);
+            layoutEmptyState.setVisibility(View.GONE);
         }
     }
 

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Đặt Đồ Ăn</string>
-    <string name="food_list_title">Danh sách món ăn</string>
+    <string name="app_name">Yummy Food</string>
+    <string name="food_list_title">Món Ngon Mỗi Ngày</string>
+    <string name="today_food_prompt">Hôm nay bạn muốn ăn gì? 🍕</string>
     <string name="search_title">Tìm kiếm món ăn</string>
     <string name="search_hint">Nhập tên món ăn (ví dụ: pizza...)</string>
+    <string name="search_prompt">Nhập tên món ăn để bắt đầu tìm kiếm</string>
     <string name="search_button">Tìm kiếm</string>
     <string name="no_result_found">Không tìm thấy món ăn phù hợp.</string>
     <string name="detail_title">Chi tiết món ăn</string>
-    <string name="ingredients_title">Thành phần:</string>
-    <string name="quantity_title">Số lượng:</string>
-    <string name="total_price_title">Thành tiền:</string>
-    <string name="btn_order">Đặt món</string>
-    <string name="btn_view_detail">Xem chi tiết</string>
-    <string name="order_success">Đặt món thành công!</string>
+    <string name="ingredients_title">Thành phần chính</string>
+    <string name="quantity_title">Số lượng</string>
+    <string name="total_price_title">Thành tiền</string>
+    <string name="btn_order">Đặt Món Ngay</string>
+    <string name="btn_view_detail">Chi tiết</string>
+    <string name="order_success">Đặt món thành công! 🎉</string>
+    <string name="tag_hot">🔥 Bán chạy</string>
 </resources>

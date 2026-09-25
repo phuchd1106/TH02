@@ -48,7 +48,7 @@ public class FoodRepository {
                 "Mì cay Hàn Quốc cấp độ chuẩn vị hải sản",
                 65000,
                 R.drawable.ic_noodles,
-                "Mì Koreno, tôm, mực, bò, nấm kim针, ớt Hàn Quốc"
+                "Mì Koreno, tôm, mực, bò, nấm kim châm, ớt Hàn Quốc"
         ));
         foods.add(new Food(
                 6,
@@ -70,10 +70,10 @@ public class FoodRepository {
     }
 
     public static List<Food> searchFood(String query) {
-        List<Food> allFoods = getFoodList();
         if (query == null || query.trim().isEmpty()) {
-            return allFoods;
+            return new ArrayList<>();
         }
+        List<Food> allFoods = getFoodList();
         List<Food> filtered = new ArrayList<>();
         String lowerQuery = query.toLowerCase().trim();
         for (Food food : allFoods) {
